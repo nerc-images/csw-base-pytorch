@@ -1,10 +1,10 @@
-# CSW-base-pytorch
+# csw-base-pytorch
 
 A Jupyter OpenShift AI Image with PyTorch and CUDA for GPUs.
-Based on the [opendatahub workbench images](https://github.com/opendatahub-io-contrib/workbench-images)
+Based on the [Red Hat Data Services notebook images](https://github.com/red-hat-data-services/notebooks/)
 on GitHub for Jupyter Lab Notebook integration.
 
-Base image: [quay.io/opendatahub-contrib/workbench-images:CSW-base-pytorch-c9s-py311_2023c_latest](https://github.com/opendatahub-io-contrib/workbench-images)
+Base image: [quay.io/modh/odh-pytorch-notebook:v3-20250808](https://github.com/red-hat-data-services/notebooks/)
 
 | System packages | Description |
 | --- | --- |
@@ -17,28 +17,28 @@ Base image: [quay.io/opendatahub-contrib/workbench-images:CSW-base-pytorch-c9s-p
 
 ## Instructions on building the container
 
-You can pull the latest [CSW-base-pytorch container image](https://github.com/nerc-images/CSW-base-pytorch/pkgs/container/CSW-base-pytorch) below:
+You can pull the latest [csw-base-pytorch container image](https://github.com/nerc-images/csw-base-pytorch/pkgs/container/csw-base-pytorch) below:
 
 ```bash
-podman pull quay.io/nerc-images/CSW-base-pytorch:latest
+podman pull quay.io/nerc-images/csw-base-pytorch:latest
 ```
 
 You can build the container like this: 
 
 ```bash
-podman build -t nerc-images/CSW-base-pytorch:latest .
+podman build -t nerc-images/csw-base-pytorch:latest .
 ```
 
 You can push the container to quay.io like this: 
 
 ```bash
-podman push nerc-images/CSW-base-pytorch:latest quay.io/nerc-images/CSW-base-pytorch:latest
+podman push nerc-images/csw-base-pytorch:latest quay.io/nerc-images/csw-base-pytorch:latest
 ```
 
 You can run the container like this: 
 
 ```bash
-podman run -p 8888:8888 --rm nerc-images/CSW-base-pytorch:latest
+podman run -p 8888:8888 --rm nerc-images/csw-base-pytorch:latest
 ```
 
 You will need to click the link it outputs to connect with the required token. 
